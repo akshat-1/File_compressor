@@ -18,6 +18,9 @@
 <p>METHORDS(PUBLIC) -> <br>1. decoder(str,key).solver() {solver is a void function which decodes the given encoded string}</p><br>
 <p> 2. decoder(str,key).get_actual_str()  {get_actual_str() return a string which the the actual decoded string} </p> <br>
 
+<h2> COMPLEXITY ANAYISIS </h2>
+<br> <p> 1. encoder (hoffman.hpp) <br> <b> SPACE COMPLEXITY ~</b> O(2n-1) + O((2n-1)*(3n))+ O(n(1+n)) + O((2n-1)(n+2))~ <b>O(n^2)</b> <br> <b> TIME COMPLEXITY ~</b> 2*O(n) + 2*O(2n-1) ~ <b> O(n)</b>  </p> <br>
+<p> 2. decoder (hoffman_decoder.hpp) <br> <b> SPACE COMPLEXITY ~</b> O(n) + O(n*(n+1)) + O(2n-1) ~ <b> O(n^2) </b> <br> <b> TIME COMPLEXITY ~ </b>O(n) + O((n)*(2n-1)) ~ <b> O(n^2)</b> <br>
 <h1> TROUBLE-SHOOTING (FOR BEGINNERS) </h1>
 <p> 1. make sure that you run the solver() before using get_str(), get_key() or get_actual_str() , otherwise you will always get a empty string and empty key as output </p>
 
