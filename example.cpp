@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
-#include "hoffman.h"
-#include "hoffman_decoder.h"
+#include "hoffman.hpp"
+#include "hoffman_decoder.hpp"
 using namespace std;
 
 int main()
